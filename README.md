@@ -4,6 +4,8 @@ Combines Celestrak.org with an efficient reverse-gecoder
 
 To use make sure that the folder orbiting is in the same directory as your code
 
+For this to work make sure you have installed Ephem, country-converter, 
+
 For example:
     Users/user/Project/orbiting
     Users/user/Project/ActualCode
