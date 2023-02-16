@@ -4,7 +4,7 @@ Combines Celestrak.org with an efficient reverse-gecoder
 
 To use make sure that the folder orbiting is in the same directory as your code
 
-For this to work make sure you have installed Ephem, country-converter, 
+For this to work make sure you have installed ephem, country-converter, pandas and requests. These are modules that are available everywhere. So you can access this via JetBrains. For JetBrains go to Settings > Project: ProjectName Tab > Python Interpreter. The click the plus arrow and type in the name of the modules
 
 For example:
     Users/user/Project/orbiting
