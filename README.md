@@ -4,14 +4,14 @@ Combines Celestrak.org with an efficient reverse-gecoder
 
 To use make sure that the folder orbiting is in the same directory as your code
 
-For this to work make sure you have installed ephem, country-converter, pandas and requests. These are modules that are available everywhere. So you can access this via JetBrains. For JetBrains go to Settings > Project: ProjectName Tab > Python Interpreter. The click the plus arrow and type in the name of the modules
+For this to work make sure you have installed ephem, country-converter, pandas and requests. These are modules that are available everywhere. So you can access this via JetBrains. For JetBrains go to Settings > Project: ProjectName Tab > Python Interpreter. The click the plus arrow and type in the name of the modules. You can also access this via Pip.
 
 For example:
     Users/user/Project/orbiting
     Users/user/Project/ActualCode
     
 # Imports
-    from orbiting import Satellite, Coordinate
+    from classes import Satellite, Coordinates
  
 # Initializing 
     iss = Satellite(25544) // We do this as it is the Celestrak.org catalog number.
