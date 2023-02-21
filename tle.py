@@ -1,10 +1,10 @@
-import requests
+import urllib.request
 import ephem
 
 
 def get(catnr):
-    page = requests.get(f'http://www.celestrak.com/cgi-bin/TLE.pl?CATNR='+str(catnr))
-    tle = page.text.split('\n')
+    page = urllib.request.urlopen(f'http://www.celestrak.com/cgi-bin/TLE.pl?CATNR='+str(catnr))
+    tle = [line.decode('utf-8') for line in page]
     return tle[0].strip(), tle[1].strip(), tle[2].strip()
 
 

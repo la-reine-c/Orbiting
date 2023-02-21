@@ -1,7 +1,6 @@
 import pandas as pd
 import country_converter as coco
 from math import radians, cos, sin, asin, sqrt, atan2
-from orbit import satellite
 
 
 def calc_year(year):
@@ -139,7 +138,7 @@ class Satellite(Coordinates):
         return degrees(self.tle_parsed.sublong)
 
     def find_elevation(self):
-        return self.tle_parsed.elevation
+        return f"{self.tle_parsed.elevation/1000} km"
 
     def find_eclipsed(self):
         return self.tle_parsed.eclipsed
